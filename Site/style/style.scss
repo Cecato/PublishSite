@@ -1,0 +1,539 @@
+@import './variaveis';
+
+body {
+    
+    font-family: 'Roboto';
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none!important;
+}
+Nav {
+    position: sticky;
+    z-index: 10000000!important;
+    top: 0;
+    background-color: #fff;
+    z-index: 300!important;
+   
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 0px 20px, rgba(0, 0, 0, 0.23) 0px -10px 6px;
+
+    .logo {
+        margin: 1rem;    
+    }
+    .icons-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            margin: 1rem;
+            color: $main-escuro;
+            transition: 0.3s;
+            &:hover {
+                color: $main;
+    
+            }
+        } 
+        .menu-links {
+            display: flex;
+            
+            a {
+                margin: 0rem!important;
+                font-weight: 400;
+                font-family: 'Roboto';
+                
+                
+            }
+
+           
+        }
+        
+
+        .whatsapp 
+        {
+        
+            a {
+            
+            color: #25d366;
+        }
+    }
+
+        
+    }
+
+    
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline;
+}
+
+// .box {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     text-align: center;
+    
+//     h3, h2 {
+//         color: $main;
+//         margin: 2rem 2rem 0;
+       
+//     }
+//     p {
+//         margin: 0 2rem 0.5rem;
+//         color: $main-escuro;
+//     }
+//     .cortado {
+//         width: 10rem; /* width of container */
+//     height: 10rem; /* height of container */
+//     object-fit: cover;
+//     border-radius: 100%;
+//     margin: 1rem;
+//     border: 10px solid $main-claro;
+//     }
+//     .img-marca {
+//         display: flex;
+//         flex-direction: column;
+//         margin: 2rem;
+        
+        
+//     }
+// }
+
+
+#sobre {
+    display: flex;
+    justify-content: center;
+    
+    // flex-direction: column;
+    align-items: center;
+    color: #666;
+
+    .img-container{
+        width: 50%;
+        height: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    h3{
+        text-align: center;
+        color: $main;
+        margin: 1rem;
+    }
+    .text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        
+        p {
+            margin: 0 4rem;
+        }
+.btn {
+    overflow: hidden;
+    margin: 1rem 4rem;
+    color: $main;
+    border-radius: 30px;
+    border: 2px solid $main-claro;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background: $main-claro;
+        border-radius: 0 0 100% 100%;
+        transition: 0.5s;
+        z-index: -1;
+        
+        
+    }
+    &:hover {
+      
+        transition:  0.5s;
+        color: #fff;
+    }
+
+    &:hover::before{
+        height: 100%;
+        border-radius: 0%;
+       
+    } 
+    
+}
+        
+    }
+
+   
+}
+
+.container-contato {
+    .bottom {
+        color: #fff;
+        background-color: $main-escuro;
+        display: flex;
+        align-items: center;
+        padding: 6rem;
+        justify-content: center;
+        height: 10rem;
+        opacity: 0.8;
+        flex-direction: column;
+        h3 {
+            font-size: 2rem;
+        }
+        p {
+            margin-bottom: 2rem;
+        }
+        #direitos {
+           font-size: 0.7rem;
+        }
+        .container-social {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i {
+                margin: 1rem;
+            }
+           
+        }
+    }
+
+
+}
+
+
+  
+   
+
+
+
+
+
+.menu-mobile {
+    transition: 1s;
+    display: flex;
+   height : 100vh;
+   width: 100%;
+   overflow: none;
+   position : fixed;
+   z-Index : 500;
+   background-color: #fff ;
+   overflow-y: unset;
+   overflow:hidden;
+   
+   flex-direction: column;
+  
+   .menu-mobile-links {
+    display: flex ;
+    flex-direction: column;
+    
+   }
+
+   i {
+       color: $second;
+   }
+
+   #first {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 1rem ;
+       border-bottom: 1px solid $main-claro;
+   }
+
+   .nav-link {
+       font-size: 1.5rem;
+       color: $main;
+       border-bottom: 1px solid $main-claro ;
+       
+   }
+}
+
+.showcase {
+    height: 50vh;
+    display: flex ;
+    .first {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        width: 100%;
+        background-color: $main-escuro;
+        h2 {
+            font-size: 2rem!important;
+            font-family: 'Roboto'!important;
+            font-weight: 500!important;
+            margin: 0!important;
+            z-index: 3;
+            span {
+                background-color: #fff;
+                color: $main-escuro;
+                transition: 0.5s;
+                padding: 5px;
+                &:hover{
+                    background-color: $second;
+                }
+            }
+           
+    }
+    .engrenagem {
+        position: absolute;
+    }
+
+    #engrenagem-1 {
+        transform: translate(160%, 100%);
+    }
+
+    #engrenagem-2 {
+        transform: translate(-300%, -150%);
+    }
+    #engrenagem-3 {
+        transform: translate(300%, -100%);
+    }
+
+
+
+}}
+
+#motivos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .title {
+        color: $main;
+    }
+
+    .cardbox {
+        width: 100%;
+        display: flex;
+
+        .card {
+            margin: 1rem;
+            display: flex;
+            border: 2px solid $main-claro;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 33%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+            transition: 0.5s;
+            &:hover {
+                transform: translateY(-0.5rem);
+                
+            }
+            .cardTitle {
+                text-align: center;
+                color: $main;
+                width: 80%;
+                padding: 0.5rem;
+                font-size: 1.5rem;
+             
+            }
+
+            .cardBody {
+                text-align: center;
+                margin: 0 3rem;
+                color: #666;
+                a {
+                    color: $main;
+                    transition: 0.5s;
+                    &:hover {
+                        color: $main-claro;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#galeria {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $main;
+    .box {
+        display: flex;
+        #projetos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 50%;
+            img {
+                width: 100%;
+               
+            }
+        }
+        .carousel-container {
+            width: 50%;
+        }
+        .carousel-inner{
+            border-radius: 10px;
+        }
+
+    }
+}
+
+
+
+
+
+
+#marcas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   
+    .title {
+        color: $main;
+    }
+
+    .img-marcas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.7;
+        max-width: 200px;
+        max-height: 200px;
+       
+    }
+}
+
+#servicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h3 {
+        color: $main;
+    }
+
+    .linha{
+        display: flex;
+        .servico {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 8rem;
+            img {
+                height: 5rem;
+                width: 5rem;
+            }
+            .text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+               text-align: center;
+               color: #333;
+                
+                
+            }
+        }
+        h5 {
+            color: $main-escuro;
+        }
+    }
+}
+@media (max-width: 600px) {
+    #engrenagem-1 {
+        transform: translate(160%, -110%)!important;
+    }
+
+    #engrenagem-2 {
+        transform: translate(0%, 100%)!important;
+   
+    }
+    #engrenagem-3 {
+        transform: translate(0%, 0%)!important;
+        display: none;
+    }
+
+    #sobre{
+        flex-direction: column;
+
+        .img-container {
+            width: 100%;
+        }
+.text {
+    width: 100%;
+    text-align: center;
+    p {
+        margin: 0 1rem;
+    }
+    .btn {
+        margin: 1rem;
+    }
+}
+
+    }
+
+    .cardbox {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        .card {
+            width: 100%!important;
+            
+        }
+    }
+
+    #motivos {
+        padding: 0 2rem;
+        h3 {
+            text-align: center;
+        }
+    }
+
+    .box {
+        flex-direction: column;
+
+         #projetos {
+             width: 100%!important;
+         }
+
+       
+    }
+    .carousel-container {
+        width: 100%!important;
+    }
+    .img-marcas  {
+        flex-direction: column;
+    }
+
+    #servicos {
+        .linha {
+            flex-direction: column;
+            .servico {
+                margin: 0 2rem;
+            }
+        }
+    }
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
